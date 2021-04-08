@@ -1,0 +1,31 @@
+<div [ngClass]="{'out': toOut}" class="container">
+    <header @enterHeader class="title">
+        <h1>{{title}}</h1>
+    </header>
+    <button class="back-btn">
+        <i (click)="out()" class="fas fa-chevron-left"></i>
+    </button>
+    <section class="decription">
+        <div @enterLeft class="left label">
+            <h3>{{githubLink ? 'Opis aplikacji' : 'Opis'}}</h3>
+        </div>
+        <p @enterLeft>{{description}}</p>
+        <img @enterLeft class="only-img" *ngIf="!areLinks" [src]=imgSrc>
+    </section>
+    <div *ngIf="areLinks"  class="live">
+        <div class="labels">
+            <div @enterRight class="right label">
+                <h3><i class="fas fa-arrow-down"></i> Live demo</h3>
+            </div>
+            <div *ngIf="githubLink" @enterRight class="right label">
+                <a class="github-link" [href]=githubLink target="_blank">Github</a>
+            </div>
+
+        </div>
+        <div class="content">
+            <a [href]=url target="_blank">
+                <img @enterRight [src]=imgSrc>
+            </a>
+        </div>
+    </div>
+</div>

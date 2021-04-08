@@ -1,0 +1,262 @@
+@import "../../../assets/variables.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #222222;
+  overflow-x: hidden;
+}
+.title {
+  width: 222px;
+  height: 130px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: $orange;
+  box-shadow: 0 3px 6px #00000016;
+  border-radius: 0 0 5px 5px;
+}
+h1 {
+  margin: 0;
+  font-size: 24px;
+  font-family: $header-font;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+.back-btn {
+  border: none;
+  background: none;
+  height: auto;
+  position: absolute;
+  top: 3rem;
+  left: 0.5rem;
+}
+a {
+  cursor: pointer;
+  color: #222222;
+}
+.back-btn:focus {
+  outline: none;
+}
+.fa-chevron-left {
+  cursor: pointer;
+  font-size: 47px;
+  color: #222222;
+}
+.decription {
+  align-self: flex-start;
+  margin-top: 2rem;
+}
+.live {
+  align-self: flex-end;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+.content {
+  align-self: center;
+  margin: 1.5rem;
+  width: auto;
+}
+.center {
+  flex-direction: column;
+}
+
+.label {
+  background-color: $orange;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  box-shadow: 0 3px 6px #00000016;
+  width: 60%;
+  height: 2.5rem;
+  margin-top: 1.5rem;
+}
+.right {
+  border-radius: 3px 0 0 3px;
+  width: 65%;
+}
+.right > h3,
+.github-link {
+  margin-left: 2rem;
+}
+
+h3,
+.github-link {
+  font-size: 1.5rem;
+  font-family: $header-font;
+  font-weight: 400;
+}
+.left {
+  justify-content: flex-start;
+  border-radius: 0 3px 3px 0;
+}
+.left > h3 {
+  margin-left: 2rem;
+}
+p {
+  margin: 1rem 2rem;
+  font-family: $content-font;
+}
+ul {
+  list-style: none;
+  margin: 1rem 2rem;
+  padding: 0;
+}
+img {
+  // width: 80%;
+  height: auto;
+  justify-content: center;
+}
+.labels {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+.fa-arrow-down {
+  margin-right: 0.5rem;
+}
+
+.out {
+  animation: out 0.6s ease-out forwards;
+}
+
+.only-img{
+  display: flex;
+  margin: auto;
+  height: auto;
+}
+@keyframes out {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-20vw);
+    opacity: 0;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1439px) {
+  .title {
+    width: 378px;
+    height: 140px;
+  }
+  h1 {
+    font-size: 42px;
+  }
+  .back-btn {
+    top: 4rem;
+    left: 1.5rem;
+  }
+  .left > h3 {
+    margin-left: 5rem;
+  }
+  .right > h3,
+  .github-link {
+    margin-left: 2rem;
+  }
+  .right {
+    width: 80%;
+  }
+  p {
+    margin: 1rem 5rem;
+    width: 70%;
+  }
+  ul {
+    margin: 1rem 5rem;
+    padding: 1rem;
+  }
+  img {
+    width: 100%;
+    justify-content: center;
+  }
+  .only-img{
+    max-width: 30%;
+    margin-top: 2rem
+  }
+  .decription,
+  .live {
+    width: 100%;
+  }
+  .live {
+    flex-direction: row-reverse;
+    align-items: initial;
+  }
+  .content {
+    margin: 0 0 0 5rem;
+  }
+  .labels {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 80%;
+  }
+  .fa-arrow-down {
+    transform: rotate(90deg);
+  }
+}
+@media all and (min-width: 1440px) {
+  .title {
+    width: 378px;
+    height: 140px;
+  }
+  h1 {
+    font-size: 42px;
+  }
+  .back-btn {
+    top: 4rem;
+    left: 1.5rem;
+  }
+  .only-img{
+    max-width: 25%;
+    margin-top: 8rem
+  }
+  .left > h3 {
+    margin-left: 5rem;
+  }
+  .right > h3,
+  .github-link {
+    margin-right: 5rem;
+  }
+  .right {
+    width: 80%;
+  }
+  p {
+    margin: 1rem 5rem 4rem 5rem;
+    width: 60%;
+  }
+  ul {
+    margin: 1rem 5rem;
+  }
+  img {
+    width: 100%;
+    justify-content: center;
+  }
+  .decription,
+  .live {
+    width: 100%;
+  }
+  .live {
+    flex-direction: row-reverse;
+    align-items: initial;
+    margin-top: 8rem;
+  }
+  .content {
+    margin: 0 0 0 5rem;
+  }
+  .labels {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 80%;
+  }
+  .fa-arrow-down {
+    transform: rotate(90deg);
+  }
+}

@@ -1,0 +1,125 @@
+@import "../../assets/variables.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #222222;
+  overflow-x: hidden;
+}
+h1 {
+  margin: 0;
+  font-size: 24px;
+  font-family: $header-font;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+.title {
+  width: 222px;
+  height: 130px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: $orange;
+  box-shadow: 0 3px 6px #00000016;
+  border-radius: 0 0 5px 5px;
+}
+.label {
+  background-color: $orange;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  box-shadow: 0 3px 6px #00000016;
+  width: 60%;
+  height: 2.5rem;
+  margin-top: 1.5rem;
+}
+h3 {
+  font-size: 1.3rem;
+  font-family: $header-font;
+  font-weight: 400;
+}
+.left {
+  justify-content: flex-start;
+  border-radius: 0 3px 3px 0;
+  // animation: fall 1s ease forwards;
+}
+.left > h3 {
+  margin-left: 2rem;
+}
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  margin: 1rem 2rem;
+  font-family: $content-font;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 5rem;
+  height: 6rem;
+  margin: 0.5rem;
+
+  h3 {
+    margin-top: 0.2rem;
+    font-size: 1rem;
+  }
+}
+@media all and (min-width: 600px) and (max-width: 767px) and (orientation: landscape) {
+  .technologies {
+    margin: 1rem 3rem;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1439px) {
+  .technologies {
+    margin: 1rem 3rem;
+  }
+  .left > h3 {
+    margin-left: 5rem;
+  }
+  p {
+    margin: 1rem 5rem;
+    width: 70%;
+  }
+  .title {
+    width: 378px;
+    height: 140px;
+  }
+  h1 {
+    font-size: 42px;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+@media all and (min-width: 1440px) {
+  .technologies {
+    margin: 1rem 4rem;
+  }
+  .left > h3 {
+    margin-left: 5rem;
+  }
+  p {
+    margin: 1rem 5rem;
+    width: 70%;
+  }
+  .title {
+    width: 378px;
+    height: 140px;
+  }
+  h1 {
+    font-size: 42px;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,186 @@
+@import "../../assets/variables.scss";
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  // padding-top: 3rem;
+  color: #222222;
+}
+
+.title {
+  background: $orange;
+  height: 130px;
+  width: 222px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  box-shadow: 0 3px 6px #00000016;
+  border-radius: 0 0 5px 5px;
+}
+h1,
+h2 {
+  font-family: $header-font;
+  color: $dark-violet;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  white-space: nowrap;
+  align-items: center;
+  margin: 0;
+}
+h2 {
+  font-weight: 500;
+  margin: 0.5rem 0;
+}
+.label {
+  margin-top: 2rem;
+  background: $orange;
+  display: flex;
+  align-items: center;
+  font-family: $content-font;
+  height: 3.5rem;
+  justify-content: flex-start;
+  box-shadow: 0 3px 6px #00000016;
+}
+
+i {
+  color: #222222;
+  font-size: 2rem;
+  margin: 0 1rem;
+}
+p {
+  font-size: 1.1rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.email {
+  width: 20rem;
+  border-radius: 0 3px 3px 0;
+}
+.phone {
+  display: flex;
+  align-self: flex-end;
+  border-radius: 3px 0 0 3px;
+  width: 15rem;
+}
+img {
+  width: 300px;
+  height: 300px;
+  margin-top: 1rem;
+}
+
+@media all and (min-width: 600px) and (max-width: 767px) and (orientation: landscape) {
+  .label {
+    width: 60%;
+  }
+  .title {
+    width: 44%;
+  }
+  i {
+    margin: 0 2rem;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1122px) {
+  $label-width: 86%;
+  .label {
+    width: $label-width;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  i {
+    margin-left: $label-width/9.4;
+  }
+  img {
+    position: absolute;
+    bottom: 2rem;
+  }
+  .contact {
+    margin-top: 5rem;
+  }
+}
+@media all and (min-width: 1123px) and (max-width: 1439px) {
+  //   .container {
+  //     height: 100vh;
+  //   }
+  .title {
+    width: 378px;
+    height: 140px;
+  }
+  h1,
+  h2 {
+    font-size: 36px;
+  }
+  .contact {
+    margin-top: 1rem;
+  }
+  .label {
+    width: 60%;
+    height: 3.5rem;
+    margin-top: 1.5rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  i {
+    font-size: 2rem;
+  }
+  .email > i {
+    margin: 0 1rem 0 20%;
+  }
+  .phone > i {
+    margin: 0 1rem 0 11%;
+  }
+  img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    // left: 4rem;
+    margin-top: 0;
+  }
+}
+@media all and (min-width: 1440px) {
+  .container {
+    height: 100vh;
+    background: #f1f1f130;
+  }
+  .title {
+    width: 378px;
+    height: 160px;
+  }
+  h1,
+  h2 {
+    font-size: 40px;
+  }
+  .contact {
+    margin-top: 5rem;
+  }
+  .label {
+    width: 60%;
+    height: 4rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  i {
+    font-size: 2.5rem;
+  }
+  .email > i {
+    margin: 0 1rem 0 24%;
+  }
+  .phone > i {
+    margin: 0 1rem 0 11%;
+  }
+  img {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    bottom: 2rem;
+  }
+}

@@ -1,0 +1,54 @@
+<div @fallDown class="container">
+    <div @fallDown class="container">
+        <h1 class="project">Projekty</h1>
+        <div class="projects-list">
+            <div class="project">
+                <a [routerLink]="['./id']" [queryParams]="{ id: 'myHaircarePlace'}">
+                    <div class="block haircare-place">
+                        <img src="../../assets/images/Image 4.png" alt="woman profile">
+                    </div>
+                    <h2>Aplikacja moja kosmetyczka</h2>
+                </a>
+            </div>
+            <div class="project">
+                <a [routerLink]="['./id']" [queryParams]="{ id: 'portfolio'}">
+                    <div class="block portfolio">
+                        <img src="../../assets/images/portfolioPic.png" alt="drop from leaf">
+                    </div>
+                    <h2>Portfolio</h2>
+                </a>
+            </div>
+            <div class="project">
+                <a [routerLink]="['./id']" [queryParams]="{ id: 'kasdepGame'}">
+                    <div class="block kasdep-game">
+                        <img src="../../assets/images/Image 6.png" alt="fish">
+                    </div>
+                    <h2>Gra Kasdep game</h2>
+                </a>
+            </div>
+            <div class="project">
+                <a [routerLink]="['./id']" [queryParams]="{ id: 'animation'}">
+                    <div class="block flower-for-you">
+                        <img src="../../assets/images/Image 7.png" alt="flower">
+                    </div>
+                    <h2>Animacja Flower for you</h2>
+                </a>
+            </div>
+            <div class="project">
+                <a [routerLink]="['./id']" [queryParams]="{ id: 'uxDesign'}">
+                    <div class="block ux-design">
+                        <img src="../../assets/images/design.png" alt="ux designer">
+                    </div>
+                    <h2>UX design</h2>
+                </a>
+            </div>
+            <div class="project">
+                <a [routerLink]="['./id']" [queryParams]="{ id: 'inProgress'}">
+                    <div class="block in-progress">
+                        <img src="../../assets/images/progress.png" alt="women computer loading">
+                    </div>
+                    <h2>W trakcie</h2>
+                </a>
+            </div>
+        </div>
+    </div>

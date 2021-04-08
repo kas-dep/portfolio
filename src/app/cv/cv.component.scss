@@ -1,0 +1,67 @@
+@import "../../assets/variables.scss";
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem;
+}
+.cv {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+img {
+  width: 100%;
+  margin: 0 1rem;
+}
+button {
+  width: 80%;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #ffc444;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-shadow: 0 3px 6px #00000016;
+  cursor: pointer;
+  color: #222222;
+}
+i {
+  margin-right: 0.5rem;
+}
+@media all and (min-width: 600px) and (max-width: 767px) and (orientation: landscape) {
+  img {
+    width: 80%;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 1122px) {
+  img {
+    width: 40%;
+  }
+  button {
+    width: 56%;
+    margin: 0;
+  }
+}
+@media all and (min-width: 1123px) and (max-width: 1439px) {
+  img {
+    width: 40%;
+  }
+  button {
+    width: 56%;
+    margin: 0;
+  }
+}
+@media all and (min-width: 1440px) {
+  .container {
+    margin: 5rem;
+  }
+  img {
+    width: 60%;
+  }
+  button {
+    width: 72%;
+    margin: 1rem 0;
+  }
+}
