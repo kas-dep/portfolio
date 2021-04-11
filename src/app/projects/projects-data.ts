@@ -4,7 +4,7 @@ export const projects: Project[] = [
     id: 'myHaircarePlace',
     name: 'My Haircare Place',
     description:
-      'My haircare place jest moim głównym, najbardziej rozbudowanym i innowacyjnym projektem. Frontend aplikacji został napisany w Angular 10. W celu optymalizacji i bezpieczeństwa wykorzystałam lazy loading. Layout powstał z wykorzystaniem biblioteki Angular Material i preprocesora Less. Aplikacja jest Desktop Only. Do backendu wykorzystałam ExpressJs i NodeJs oraz bazę danych mySQL. Frontend komunikuje się z backendem za pomocą REST API. Aplikacja umożliwia użytkownikowi rejestrację i logowanie, dodawanie, opisywanie i odczytywanie produktów, zdjęć, planowanie zabiegów pielęgnacyjncyh (FullCalendar).',
+      'My haircare place jest moim głównym, najbardziej rozbudowanym i innowacyjnym projektem. Frontend aplikacji został napisany w Angular 10. W celu optymalizacji i bezpieczeństwa wykorzystałam lazy loading. Layout powstał z wykorzystaniem biblioteki Angular Material i preprocesora Less. Aplikacja jest Desktop Only. Do backendu wykorzystałam ExpressJs i NodeJs oraz bazę danych mySQL. Frontend komunikuje się z backendem za pomocą REST API. Aplikacja umożliwia użytkownikowi rejestrację i logowanie, dodawanie, opisywanie i odczytywanie produktów, zdjęć, planowanie zabiegów pielęgnacyjncyh (FullCalendar). Aby się zalogować i zobaczyć wersję demo użyj podanych danych: email: haircare@gmail.com, hasło: test1234.',
     picture: '../../../assets/images/haircarePlaceInMonitor.png',
     url: 'https://haircare-place.herokuapp.com/',
     githubLink: 'https://github.com/kas-dep/haircare-place',
