@@ -97,17 +97,17 @@ img {
     margin-left: $label-width/9.4;
   }
   img {
+    width: calc(100vh - 222px - 13rem );
+    height: auto;
     position: absolute;
-    bottom: 2rem;
+    bottom: 1rem;
+    margin: auto;
   }
   .contact {
     margin-top: 5rem;
   }
 }
 @media all and (min-width: 1123px) and (max-width: 1439px) {
-  //   .container {
-  //     height: 100vh;
-  //   }
   .title {
     width: 378px;
     height: 140px;
@@ -137,12 +137,11 @@ img {
     margin: 0 1rem 0 11%;
   }
   img {
-    width: 300px;
-    height: 300px;
+    width: calc(100vh - 140px - 11rem );
+    height: auto;
     position: absolute;
     bottom: 0;
-    // left: 4rem;
-    margin-top: 0;
+    margin: auto;
   }
 }
 @media all and (min-width: 1440px) {
@@ -178,9 +177,10 @@ img {
     margin: 0 1rem 0 11%;
   }
   img {
-    width: 450px;
-    height: 450px;
+    width: calc(100vh - 160px - 18rem );
+    height: auto;
     position: absolute;
-    bottom: 2rem;
+    bottom: 0;
+    margin: auto
   }
 }
